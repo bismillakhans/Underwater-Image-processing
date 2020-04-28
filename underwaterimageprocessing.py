@@ -277,17 +277,22 @@ def mainFunction(img):
 	fused_image=normalise(fused_image)
 	
 	res = cv2.resize(fused_image, dsize=(600, 600), interpolation=cv2.INTER_CUBIC)
-	cv2.imshow("imG",res)
+	return res
+	#cv2.imshow("imG",res)
 	
 	#cv2.imwrite(os.path.join(path , 'out.jpg'), img)
 	#cv2.imwrite("/home/arunima/flask/static/img/in.png",img)
-	cv2.imwrite("/home/arunima/flask/aru_UI/static/out.png",fused_image)
-	cv2.waitKey(0)
+	#cv2.imwrite("/home/arunima/flask/aru_UI/static/out.png",fused_image)
+	#cv2.waitKey(0)
 	#plt.show()
 	
 	#input_image
 	#plt.imshow(img)
 	#plt.show()
+        
+
+
+
 #mainFunction()
 #def runSpeedFunction():
 	#pass
